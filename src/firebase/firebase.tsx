@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
 import { addDoc, collection, getDocs, getFirestore, query, where } from "firebase/firestore";
 import { toast } from "react-toastify";
 import Cookies from "js-cookie";
