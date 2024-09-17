@@ -20,12 +20,12 @@ function App() {
       <div>
       <ToastContainer theme="dark"/>
         <Routes>
-          <Route path="*" element={user ? <Navigate to="https://mynetflixclone-react.vercel.app/home" /> : <Login setUser={setUser} />} />
-          <Route path="/" element={user ? <Navigate to="https://mynetflixclone-react.vercel.app/home" /> : <Login setUser={setUser} />} />
-          <Route path="/login" element={user ? <Navigate to="https://mynetflixclone-react.vercel.app/home" /> : <Login setUser={setUser} />} />
-          <Route path="/signup" element={user ? <Navigate to="https://mynetflixclone-react.vercel.app/home" /> : <SignUp setUser={setUser} />} />
-          <Route path="/home" element={user ? <Home setUser={setUser} /> : <Navigate to="https://mynetflixclone-react.vercel.app/login" />} />
-          <Route path="/player/:id" element={user ? <Player /> : <Navigate to="https://mynetflixclone-react.vercel.app/login" />} />
+          <Route path="*" element={user ? <Navigate to="/home" /> : <Login setUser={setUser} />} />
+          <Route path="/" element={user ? <Navigate to="/home" /> : <Login setUser={setUser} />} />
+          <Route path="/login" element={user ? <Navigate to="/home" /> : <Login setUser={setUser} />} />
+          <Route path="/signup" element={user ? <Navigate to="/home" /> : <SignUp setUser={setUser} />} />
+          <Route path="/home" element={user ? <Home setUser={setUser} /> : <Navigate to="/login" />} />
+          <Route path="/player/:id" element={user ? <Player /> : <Navigate to="/login" />} />
         </Routes>
       </div>
 
