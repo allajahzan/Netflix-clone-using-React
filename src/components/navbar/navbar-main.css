@@ -1,0 +1,29 @@
+li{
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    padding: 0px;
+}
+
+nav {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nav-items-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:1111px){
+    .nav-items{
+        display: none;
+    }
+    .nav-items-div{
+        justify-content: end;
+    }
+}

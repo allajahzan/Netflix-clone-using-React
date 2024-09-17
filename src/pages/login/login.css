@@ -1,0 +1,13 @@
+input{
+    background-color: rgba(27, 27, 27, 0.46);
+}
+
+li{
+    list-style: none;
+    padding-top: 15px;
+}
+
+.footer-div{
+    display: flex;
+    flex-direction: column;
+}

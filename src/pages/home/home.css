@@ -1,0 +1,9 @@
+@media (max-width:1023px){
+    .banner-card{
+        display: none;
+    }
+}
+
+.card-list::-webkit-scrollbar{
+    display: none;
+}
