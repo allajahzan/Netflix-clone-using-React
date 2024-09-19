@@ -21,7 +21,7 @@ function App() {
       <ToastContainer theme="dark"/>
         <Routes>
           <Route path="*" element={user ? <Navigate to="/home" /> : <Login setUser={setUser} />} />
-          <Route path="/" element={user ? <Navigate to="/home" /> : <Login setUser={setUser} />} />
+          <Route path="/" element={user ? <Navigate to="/home" /> : <Navigate to="/login" /> } />
           <Route path="/login" element={user ? <Navigate to="/home" /> : <Login setUser={setUser} />} />
           <Route path="/signup" element={user ? <Navigate to="/home" /> : <SignUp setUser={setUser} />} />
           <Route path="/home" element={user ? <Home setUser={setUser} /> : <Navigate to="/login" />} />
