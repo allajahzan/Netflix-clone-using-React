@@ -9,7 +9,7 @@ import { useState } from "react"
 import Cookies from 'js-cookie';
 
 
-function Login({ setUser }: { setUser:React.Dispatch<React.SetStateAction<object | null>> }) {
+function Login({ setUser }: { setUser: React.Dispatch<React.SetStateAction<object | null>> }) {
 
   let [email, setEmail] = useState<string>('')
   let [password, setPassword] = useState<string>('')
@@ -19,12 +19,12 @@ function Login({ setUser }: { setUser:React.Dispatch<React.SetStateAction<object
     const user = await login(email, password)
 
     if (user) {
-      Cookies.set('user', JSON.stringify({isLoggedIn:true}), { expires: 7 });
+      Cookies.set('user', JSON.stringify({ isLoggedIn: true }), { expires: 7 });
       const userCookie = Cookies.get('user');
       const isUser = userCookie ? JSON.parse(userCookie) : null;
       setUser(isUser)
-    } 
-    
+    }
+
   }
 
 
@@ -72,7 +72,7 @@ function Login({ setUser }: { setUser:React.Dispatch<React.SetStateAction<object
 
       </div>
 
-      
+
     </>
   )
 }
