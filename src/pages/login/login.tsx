@@ -55,9 +55,7 @@ function Login({ setUser }: { setUser:React.Dispatch<React.SetStateAction<object
           <form action="" className="flex flex-col pt-10" onSubmit={handleSubmit}>
 
             <InputText action={setEmail} name="floating_email" type="email" label="Email or phone number" />
-
             <InputText action={setPassword} name="floating_password" type="password" label="Password" />
-
             <Button text="Sign In" />
 
           </form>
@@ -74,32 +72,7 @@ function Login({ setUser }: { setUser:React.Dispatch<React.SetStateAction<object
 
       </div>
 
-      {/* <div className="bg-black text-white w-[100%] p-20 pt-40 pl-40 pr-40 pb-40">
-           <p>Questions? Call 000-800-919-1694</p>
-           <div className="grid grid-cols-4 pt-5">
-            <div className="footer-div">
-              <li><a href="">FAQ</a></li>
-              <li><a href="">FAQ</a></li>
-            </div>
-            <div className="footer-div">
-              <li><a href="">FAQ</a></li>
-              <li><a href="">FAQ</a></li>
-            </div>
-            <div className="footer-div">
-              <li><a href="">FAQ</a></li>
-            </div>
-            <div className="footer-div">
-              <li><a href="">FAQ</a></li>
-            </div>
-           </div>
-           <select className="bg-transparent text-white border border-gray-100 border-1 rounded-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" name="" id="">
-            <option hidden selected value="">
-            <img src={lang} alt="" />
-            </option>
-            <option value="">English</option>
-            <option value="">Hindi</option>
-           </select>
-      </div> */}
+      
     </>
   )
 }
